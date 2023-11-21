@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+
+    <!--Page Title-->
+    <title>Watchers</title>
+
+    <!--Meta Keywords and Description-->
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="stimages/favicon.ico" title="Favicon"/>
+
+    <!-- Main CSS Files -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
+
+    <!-- Namari Color CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/namari-color.css')}}">
+
+    <!--Icon Fonts - Font Awesome Icons-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.min.css')}}">
+
+    <!-- Animate CSS-->
+    <link href="{{ url_for('static', filename='css/animate.css')}}" rel="stylesheet" type="text/css">
+
+    <!--Google Webfonts-->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+<!-- Preloader -->
+<div id="preloader">
+    <div id="status" class="la-ball-triangle-path">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</div>
+<!--End of Preloader-->
+
+<div class="page-border" data-wow-duration="0.7s" data-wow-delay="0.2s">
+    <div class="top-border wow fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;"></div>
+    <div class="right-border wow fadeInRight animated" style="visibility: visible; animation-name: fadeInRight;"></div>
+    <div class="bottom-border wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;"></div>
+    <div class="left-border wow fadeInLeft animated" style="visibility: visible; animation-name: fadeInLeft;"></div>
+</div>
+
+<div id="wrapper">
+
+    <header id="banner" class="scrollto clearfix" data-enllax-ratio=".5">
+        <div id="header" class="nav-collapse">
+            <div class="row clearfix">
+                <div class="col-1">
+
+                    <!--Logo-->
+                    <div id="logo">
+
+                        <!--Logo that is shown on the banner-->
+                        <img src="images/logo.png" id="banner-logo" alt="Landing Page"/>
+                        <!--End of Banner Logo-->
+
+                        <!--The Logo that is shown on the sticky Navigation Bar-->
+                        <img src="images/logo-2.png" id="navigation-logo" alt="Landing Page"/>
+                        <!--End of Navigation Logo-->
+
+                    </div>
+                    <!--End of Logo-->
+
+                    <aside>
+
+                        <!--Social Icons in Header-->
+                        <ul class="social-icons">
+                            <li>
+                                <a target="_blank" title="Facebook" href="">
+                                    <i class="fa fa-facebook fa-1x"></i><span>Facebook</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" title="Google+" href="">
+                                    <i class="fa fa-google-plus fa-1x"></i><span>Google+</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" title="Twitter" href="">
+                                    <i class="fa fa-twitter fa-1x"></i><span>Twitter</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" title="Instagram" href="">
+                                    <i class="fa fa-instagram fa-1x"></i><span>Instagram</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" title="behance" href="">
+                                    <i class="fa fa-behance fa-1x"></i><span>Behance</span>
+                                </a>
+                            </li>
+                        </ul>i>
+                        </ul>
+                        <!--End of Social Icons in Header-->
+
+                    </aside>
+
+                    <!--Main Navigation-->
+                    <nav id="nav-main">
+                        <ul>
+                            <li>
+                                <a href="{{url_for('index')}}">Home</a>
+                            </li>
+
+                          
+                            <li>
+                                <a href="">Gallery</a>
+                            </li>
+                            
+    
+                        </ul>
+                    </nav>
+                    <!--End of Main Navigation-->
+
+                    <div id="nav-trigger"><span></span></div>
+                    <nav id="nav-mobile"></nav>
+
+                </div>
+            </div>
+        </div><!--End of Header-->
+
+ 
+ <!--Introduction-->
+        <section id="about" class="introduction scrollto">
+
+            <div class="row clearfix">
+
+                <div class="col-3">
+                    <div class="section-heading">
+                        <h3>Our Mission</h3>
+                        <h2 class="section-title">The Watchers</h2>
+                        <p class="section-subtitle">Weather Watcher was founded with a mission to foster a sense of community among meteorology enthusiasts,
+                             providing a platform for learning, collaboration, and the exchange of ideas. We aim to create an inclusive space where everyone,
+                              regardless of their level of expertise, 
+                            can come together to deepen their understanding of meteorology and share their passion for the weather.</p>
+                    </div>
+
+                </div>
+
+                <div class="col-2-3">
+
+                    <!--Icon Block-->
+                    <div class="col-2 icon-block icon-top wow fadeInUp" data-wow-delay="0.1s">
+                        <!--Icon-->
+                        <div class="icon">
+                            <!-- <i class="fa fa-html5 fa-2x"></i> -->
+                        </div>
+                        <!--Icon Block Description-->
+                        <div class="icon-block-description">
+                            <h4>What Sets Us Apart &amp; make us unique</h4>
+                            <p>Diverse Community: Weather Watcher brings together a diverse group of individuals, including seasoned meteorologists,
+                                 students, hobbyists, and anyone with a genuine interest in weather patterns. 
+                                This diversity enriches our discussions and perspectives, creating a dynamic and welcoming atmosphere.</p>
+                        </div>
+                    </div>
+                    <!--End of Icon Block-->
+
+                    <!--Icon Block-->
+                    <div class="col-2 icon-block icon-top wow fadeInUp" data-wow-delay="0.3s">
+                        <!--Icon-->
+                        <div class="icon">
+                            <!-- <i class="fa fa-bolt fa-2x"></i> -->
+                        </div>
+                        <!--Icon Block Description-->
+                        <div class="icon-block-description">
+                            <h4>Educational Opportunities</h4>
+                            <p>Whether you're a student looking to explore a career in meteorology or a weather enthusiast eager to expand your knowledge, Weather Watcher offers a range of educational opportunities.
+                                 From expert-led workshops to field trips, we provide hands-on experiences that go beyond textbooks</p>
+                        </div>
+                    </div>
+                    <!--End of Icon Block-->
+
+                    <!--Icon Block-->
+                    <div class="col-2 icon-block icon-top wow fadeInUp" data-wow-delay="0.5s">
+                        <!--Icon-->
+                        <div class="icon">
+                            <!-- <i class="fa fa-tablet fa-2x"></i> -->
+                        </div>
+                        <!--Icon Block Description-->
+                        <div class="icon-block-description">
+                            <h4>Passion for Weather</h4>
+                            <p>What unites us is our shared passion for weather. Whether it's the thrill of tracking storms, understanding climate patterns, or simply marveling at the beauty of a sunset,
+                                 Weather Watcher is the place to connect with like-minded individuals who share your enthusiasm</p>
+                        </div>
+                    </div>
+                    <!--End of Icon Block-->
+
+                    <!--Icon Block-->
+                    <div class="col-2 icon-block icon-top wow fadeInUp" data-wow-delay="0.5s">
+                        <!--Icon-->
+                        <div class="icon">
+                            <!-- <i class="fa fa-rocket fa-2x"></i> -->
+                        </div>
+                        <!--Icon Block Description-->
+                        <div class="icon-block-description">
+                            <h4>Get Involved</h4>
+                            <p>Becoming a part of Weather Watcher is easy! Join our community today and enjoy:
+
+                                Access to exclusive events and workshops.
+                                Engaging discussions with fellow weather enthusiasts.
+                                Opportunities to participate in field trips and hands-on experiences.
+                                A platform to share your own insights and experiences.</p>
+                        </div>
+                    </div>
+                    <!--End of Icon Block-->
+
+                </div>
+
+            </div>
+
+
+        </section>
+        <!--End of Introduction-->
+        <!-- Include JavaScript resources -->
+<!-- Include JavaScript resources -->
+<script src="{{ url_for('static', filename='js/jquery.1.8.3.min.js')}}"></script>
+<script src="{{ url_for('static', filename='js/wow.min.js')}}"></script>
+<script src="{{ url_for('static', filename='js/featherlight.min.js')}}"></script>
+<script src="{{ url_for('static', filename='js/featherlight.gallery.min.js')}}"></script>
+<script src="{{ url_for('static', filename='js/jquery.enllax.min.js')}}"></script>
+<script src="{{ url_for('static', filename='js/jquery.scrollUp.min.js')}}"></script>
+<script src="{{ url_for('static', filename='js/jquery.easing.min.js')}}"></script>
+<script src="{{ url_for('static', filename='js/jquery.stickyNavbar.min.js')}}"></script>
+<script src="{{ url_for('static', filename='js/jquery.waypoints.min.js')}}"></script>
+<script src="{{ url_for('static', filename='js/images-loaded.min.js')}}"></script>
+<script src="{{ url_for('static', filename='js/lightbox.min.js')}}"></script>
+<script src="{{ url_for('static', filename='js/site.js')}}"></script>
+
+
+</body>
+</html>
